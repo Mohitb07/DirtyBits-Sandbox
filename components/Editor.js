@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import dynamic from "next/dynamic";
 import { ClockLoader as Loader } from "react-spinners";
 const MonacoEditor = dynamic(import("react-monaco-editor"), {
@@ -6,12 +5,7 @@ const MonacoEditor = dynamic(import("react-monaco-editor"), {
   loading: () => <Loader />,
 });
 
-export const Editor = () => {
-  const [editorValue, setEditorValue] = useState("");
-  const [language, setLanguage] = useState("cpp");
-  const [theme, setTheme] = useState("vs-dark");
-  const [fontSize, setFontSize] = useState(16);
-
+export const Editor = (props) => {
   return (
     <>
       <MonacoEditor
@@ -28,15 +22,15 @@ export const Editor = () => {
         }}
         width="100%"
         height="100%"
-        language={language}
-        theme={theme}
-        value={editorValue}
+        language={props.language.value}
+        theme={props.theme}
+        value={props.editorValue}
         options={{
           minimap: {
             enabled: false,
           },
           //   glyphMargin: true,
-          fontSize: fontSize,
+          fontSize: props.fontSize,
           //   cursorStyle: "block",
           folding: true,
           wordWrap: "on",
@@ -46,7 +40,7 @@ export const Editor = () => {
           copyWithSyntaxHighlighting: false,
           acceptSuggestionOnEnter: "smart",
         }}
-        onChange={(post) => setEditorValue(post)}
+        onChange={(data) => props.setEditorValue(data)}
       />
     </>
   );

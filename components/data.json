@@ -1,0 +1,53 @@
+{
+  "theme": [
+    {
+      "label": "vs-dark",
+      "value": "vs-dark",
+      "type": "dark"
+    },
+    {
+      "label": "Light",
+      "value": "light",
+      "type": "light"
+    }
+  ],
+
+  "language": [
+    {
+      "label": "C",
+      "value": "cpp",
+      "lang": "clike",
+      "versionIndex": "4",
+      "ext": ".c",
+      "pre": "#include<stdio.h>\nusing namespace std;\n\nint main(){\n\n  return 0;\n}",
+      "iconClass": "SiCplusplus"
+    },
+    {
+      "label": "C++",
+      "value": "cpp",
+      "lang": "clike",
+      "versionIndex": "0",
+      "ext": ".cpp",
+      "pre": "#include<iostream>\nusing namespace std;\n\nint main(){\n\n  return 0;\n}",
+      "iconClass": "SiCplusplus"
+    },
+    {
+      "label": "Java",
+      "value": "java",
+      "lang": "clike",
+      "versionIndex": "3",
+      "ext": ".java",
+      "pre": "public class Main {\n  public static void main(String args[]) {\n\tSystem.out.println('Hello World!');\n  }\n}",
+      "iconClass": "SiJava"
+    },
+    {
+      "label": "Python 3",
+      "value": "python",
+      "lang": "python",
+      "versionIndex": "3",
+      "ext": ".py",
+      "pre": "print('Hello World !')",
+      "iconClass": "SiPython"
+    }
+  ]
+}
