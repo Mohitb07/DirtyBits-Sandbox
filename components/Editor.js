@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import dynamic from "next/dynamic";
 import { ClockLoader as Loader } from "react-spinners";
 const MonacoEditor = dynamic(import("react-monaco-editor"), {
@@ -27,7 +27,7 @@ export const Editor = () => {
           };
         }}
         width="100%"
-        height="90%"
+        height="100%"
         language={language}
         theme={theme}
         value={editorValue}
@@ -47,6 +47,9 @@ export const Editor = () => {
           acceptSuggestionOnEnter: "smart",
         }}
         onChange={(post) => setEditorValue(post)}
+        beforeMount={() => {
+          console.log("Mounting");
+        }}
       />
     </>
   );
