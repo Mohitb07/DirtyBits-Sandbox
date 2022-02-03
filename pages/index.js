@@ -11,7 +11,7 @@ export default function Home() {
         width={800}
         width={600}
         theme="vs-dark"
-        language="javascript"
+        language="python"
         // editorDidMount={() => {
         //   // @ts-ignore
         //   window.MonacoEnvironment.getWorkerUrl = (_moduleId, label) => {
