@@ -47,9 +47,6 @@ export const Editor = () => {
           acceptSuggestionOnEnter: "smart",
         }}
         onChange={(post) => setEditorValue(post)}
-        beforeMount={() => {
-          console.log("Mounting");
-        }}
       />
     </>
   );
