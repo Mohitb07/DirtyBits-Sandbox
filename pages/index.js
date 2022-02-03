@@ -6,7 +6,7 @@ const MonacoEditor = dynamic(import("react-monaco-editor"), { ssr: false });
 export default function Home() {
   return (
     <div style={{ height: "100vh", width: "100vw" }} className="container">
-      <h1>Hello world</h1>
+      <h1 className="text-red-600 text-xl">Hello world</h1>
       <MonacoEditor
         width={800}
         width={600}
