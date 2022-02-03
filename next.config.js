@@ -19,16 +19,10 @@ module.exports = withTM({
     }
     config.plugins.push(
       new MonacoEditorWebpackPlugin({
-        languages: ["javascript", "python"],
+        languages: ["javascript", "python", "java", "cpp"],
         filename: "static/[name].worker.js",
       })
     );
-    // config.plugins.push(
-    //   new MonacoWebpackPlugin({
-    //     language: ["javascript", "typescript", "markdown"],
-    //     filename: "static/[name].worker.js",
-    //   })
-    // );
     return config;
   },
 });
