@@ -31,7 +31,7 @@ export const DropdownV3 = (props) => {
               </div>
             </button>
             <ul
-              class="dropdown-menu min-w-full absolute hidden text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1  m-0 bg-clip-padding border-none bg-gray-800 max-h-60 overflow-scroll scrollbar-hide"
+              class="dropdown-menu min-w-full absolute hidden text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg  bg-clip-padding border-none bg-gray-800 max-h-60 overflow-scroll scrollbar-hide "
               aria-labelledby="dropdownMenuButton2"
             >
               {props.list.map((item) => {

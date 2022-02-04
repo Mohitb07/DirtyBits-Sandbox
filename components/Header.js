@@ -110,7 +110,7 @@ function Header(props) {
   };
 
   return (
-    <div className="flex justify-around p-10">
+    <div className="flex justify-around p-10 bg-black w-screen">
       {/* <FontDropdown fontSize={props.fontSize} setFontSize={changeFont} /> */}
       <Dropdown2
         dropdownType={"theme"}
@@ -131,13 +131,13 @@ function Header(props) {
       {/* TOP RIGHT ICONS */}
       <div className="space-x-4 flex items-center transition-all ease-in-out">
         {/* <Tooltip content="Upload Code to cloud" color="secondary"> */}
-        <Image
+        {/* <Image
           onClick={uploadCloud}
           className="cursor-pointer"
           src={uploadquestion}
           width={20}
           height={20}
-        />
+        /> */}
         {/* </Tooltip> */}
 
         <div>

@@ -7,7 +7,7 @@ const MonacoEditor = dynamic(import("react-monaco-editor"), {
 
 export const Editor = (props) => {
   return (
-    <>
+    <div className="h-full w-screen">
       <MonacoEditor
         editorDidMount={() => {
           window.MonacoEnvironment.getWorkerUrl = (_moduleId, label) => {
@@ -21,7 +21,7 @@ export const Editor = (props) => {
           };
         }}
         width="100%"
-        height="100%"
+        height="85%"
         language={props.language.value}
         theme={props.theme}
         value={props.editorValue}
@@ -29,7 +29,7 @@ export const Editor = (props) => {
           minimap: {
             enabled: false,
           },
-          //   glyphMargin: true,
+          glyphMargin: true,
           fontSize: props.fontSize,
           //   cursorStyle: "block",
           folding: true,
@@ -42,6 +42,6 @@ export const Editor = (props) => {
         }}
         onChange={(data) => props.setEditorValue(data)}
       />
-    </>
+    </div>
   );
 };

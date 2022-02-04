@@ -18,7 +18,7 @@ export default function Home() {
   });
   const [fontSize, setFontSize] = useState(16);
   return (
-    <div style={{ height: "100vh", width: "100vw" }} className="container">
+    <div className="container h-screen w-screen">
       <Header
         editorValue={editorValue}
         language={language}
